@@ -1,0 +1,63 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+header{
+    background-color: #a7b6d3;
+}
+
+.btn{
+    background-color : pink;
+    margin-left: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.container{
+    margin-top : 10%;
+    margin-left: 30%;
+    width : 30%;
+    box-shadow: 5px 8px 10px pink;
+}
+
+footer{
+    padding-top: 70%;
+}
+
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+}
+
+span{
+    margin-left : 5px;
+}
+  
+
+.imgd{
+    border-radius: 5px;
+  }
+
+.displaySep{
+    margin-top : 10%;
+    margin-left : 30%;
+    width : 100%;
+    padding : 5px;
+    margin: 0px;
+    font-size: large;
+}
+
+.heading{
+    background-color: pink;
+    text-align: center;
+    color: black;
+}
+
+.formdata{
+    padding-bottom: 10px;
+}
+
+input{
+    margin-left: 10px;
+}

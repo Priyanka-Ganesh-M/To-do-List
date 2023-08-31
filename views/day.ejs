@@ -1,0 +1,16 @@
+<%- include ("partials/header.ejs")%>
+<div class = "container">
+  <h1>Day List</h1>
+  <% if(locals.a){ %>
+    <div class = "display">
+    <% a.forEach(item=>{ %>
+      <div class = "columnclass">
+        <input type = "checkbox"><span><%=item.name%></span><hr>
+      </div>
+    <% }); %>
+    <% } %>
+    </div>
+</div>
+
+
+<%-include("partials/footer.ejs")%>

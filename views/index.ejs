@@ -1,0 +1,39 @@
+<%- include ("partials/header.ejs");%>
+
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>
+          <%=listtitle%>
+        </h1>
+        <hr>
+      </div>
+
+      <% if(locals.items){ %>
+        <% items.forEach(item=>{ %>
+          <div class="displaySep">
+            <form method="post" action="/delete">
+              <input type="checkbox" name="checkbox" value="<%= item._id%>" onChange="this.form.submit()"><span>
+                <%=item.name%>
+              </span>
+              <hr>
+          </div>
+          <input type = "hidden" name = "listname" value = "<%=listtitle%>"></input>
+          </form>
+
+          <% }); %>
+            <% } %><br>
+
+              <div class="formdata">
+                <form action="/" method="POST">
+                  <input type="text" placeholder="Add work" name="activity" autocomplete="off"
+                    style="width : 75%; height : 40px">
+                  <button class="btn rounded-pill " height="10px" type="submit" name="list"
+                    value="<%=listtitle%>">+</button>
+                </form>
+              </div>
+    </div>
+  </body>
+
+<%-include("partials/footer.ejs");%>
+  
